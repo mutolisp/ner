@@ -89,7 +89,7 @@ pws_orig.psatw(628)-1e-05
 
 # <codecell>
 
-pws_orig.dens_sat_vaptw(700)
+pws_orig.calc_pw(tx=283.15, ps=1000.6, rh=86, wd=2)
 
 # <codecell>
 

@@ -19,14 +19,20 @@ Calculation
 -----------
 
 
-    from potential_wind import ws
-    from preprocess import cwb_preproc
-    import potential_wind as pw
-    import pandas as pd
-    import numpy as np
-    \#initialization 
-    pws = pw.ws()
-    cwb = cwb_preproc()
+    >>> from potential_wind import ws
+    >>> import potential_wind as pw
+    >>> import numpy as np
 
-    pws.psatw(283.15) 
-    
+    >>> #initialization 
+    >>> pws = pw.ws()
+
+    # psatw will calculte the vapor pressure in 
+    # given temperature (unit: K)
+    >>> pws.psatw(283.15) 
+    0.012281838693402238
+
+    # calc_pw(tx, ps, rh, wd) compute the density of wind and
+    # wind energy resources
+    >>> pws.calc_pw(tx=283.15, ps=1000.6, rh=86, wd=2)
+    (1.2, 42.38665324033601)
+

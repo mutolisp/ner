@@ -460,14 +460,14 @@ class ws_array:
                 return(densreg3)
             densold = densnew
         return(-2)
-    for i in range(0,100):
-        df['random'] = pd.DataFrame(np.random.randn(20)*100, columns=['random'])
-        df['converg'][df['random'] == 15] = 1
-        idx = df['converg'][df['converg'] != 1].index
-        if len(idx) > 0:
-            df['random'] = pd.DataFrame(np.random.randn(len(idx)), index=idx.tolist())
-        else:
-            print(i)
+        #for i in range(0,100):
+        #    df['random'] = pd.DataFrame(np.random.randn(20)*100, columns=['random'])
+        #    df['converg'][df['random'] == 15] = 1
+        #    idx = df['converg'][df['converg'] != 1].index
+        #if len(idx) > 0:
+        #    df['random'] = pd.DataFrame(np.random.randn(len(idx)), index=idx.tolist())
+        #else:
+        #    print(i)
     #####################
 
 

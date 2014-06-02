@@ -102,4 +102,8 @@ df['psatw']
 
 # <codecell>
 
+pws_orig.psatw(283.15)
+
+# <codecell>
+
 
